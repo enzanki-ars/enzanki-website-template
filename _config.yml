@@ -13,6 +13,8 @@ header:
     - text: Privacy
       internal-link: privacy.html
 
+exclude: [vendor]
+      
 gems:
   - jekyll-sitemap
   - jekyll-feed
