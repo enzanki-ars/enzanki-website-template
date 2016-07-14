@@ -41,7 +41,7 @@
                         </li>
                     {% else %}
                         <li>
-                            {% if dropdown.internal-link %}
+                            {% if link.internal-link %}
                                 <a href="{{ site.github.url }}/{{ link.internal-link }}">{{ link.text }}</a>
                             {% else %}
                                 <a href="{{ link.external-link }}">{{ link.text }}</a>
@@ -69,7 +69,7 @@
                         </li>
                     {% else %}
                         <li>
-                            {% if dropdown.internal-link %}
+                            {% if link.internal-link %}
                                 <a href="{{ site.github.url }}/{{ link.internal-link }}">{{ link.text }}</a>
                             {% else %}
                                 <a href="{{ link.external-link }}">{{ link.text }}</a>
