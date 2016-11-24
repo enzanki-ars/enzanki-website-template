@@ -16,6 +16,7 @@
 
         <script src="https://code.jquery.com/jquery-{{ site.data.versions.jquery }}.min.js"></script>
 
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/{{ site.data.versions.tether }}/js/tether.min.js"></script>
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/{{ site.data.versions.bootstrap }}/css/bootstrap.min.css" crossorigin="anonymous">
         {% if page.theme or site.theme %}
             <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootswatch/{{ site.data.versions.bootstrap }}/{{ page.theme | default: site.theme }}/bootstrap.min.css" crossorigin="anonymous">
@@ -33,6 +34,20 @@
         {% endif %}
 
         <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.14.1/moment-with-locales.min.js"></script>
+
+        {% if page.noheader == null %}
+        <style>
+          body {
+            margin-top: 4em;
+          }
+          :target:before, .thumbnail:before {
+            content:"";
+            display:block;
+            height:4em; /* fixed header height*/
+            margin:-4em 0 0; /* negative fixed header height */
+          }
+        </style>
+        {% endif %}
 
         <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/{{ site.data.versions.modernizer }}/modernizr.min.js"></script> -->
     </head>

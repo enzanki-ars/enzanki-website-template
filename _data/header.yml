@@ -1,15 +1,12 @@
-left-header:
-  - text: Home
-    internal-link: index.html
-  - text: Posts
-    internal-link: posts.html
-
-right-header:
-  - text: Privacy
-    internal-link: privacy.html
-  - text: Social
-    dropdown:
-      - text: GitHub
-        external-link: https://github.com/enzanki-ars
-      - text: Twitter
-        external-link: https://twitter.com/enzanki_ars
+- text: Home
+  internal-link: index.html
+- text: Posts
+  internal-link: posts.html
+- text: Privacy
+  internal-link: privacy.html
+- text: Social
+  dropdown:
+    - text: GitHub
+      external-link: https://github.com/enzanki-ars
+    - text: Twitter
+      external-link: https://twitter.com/enzanki_ars
