@@ -2,16 +2,28 @@ title: "Template"
 description: "Template for new Jekyll Websites"
 repository: enzanki-ars/template
 
-header:
-  left-header:
-    - text: Home
-      internal-link: index.html
-    - text: Posts
-      internal-link: posts.html
+author:
+  twitter: enzanki_ars
 
-  right-header:
-    - text: Privacy
-      internal-link: privacy.html
+twitter:
+  username: enzanki_ars
+
+social:
+  links:
+    - https://twitter.com/enzanki_ars
+
+timezone: America/New_York
+encoding: utf-8
+
+collections:
+  - tutorials
+
+defaults:
+  - scope:
+      path: ""
+      type: tutorials
+    values:
+      layout: post
 
 exclude: [vendor]
       
@@ -19,3 +31,5 @@ gems:
   - jekyll-sitemap
   - jekyll-feed
   - jekyll-redirect-from
+  - jekyll-paginate
+  - jekyll-seo-tag
