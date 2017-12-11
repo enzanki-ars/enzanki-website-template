@@ -2,7 +2,7 @@
 
 Gem::Specification.new do |spec|
   spec.name          = "enzanki-website-template"
-  spec.version       = "1.2.3"
+  spec.version       = "1.3.0"
   spec.authors       = ["Alex Shafer"]
   spec.email         = ["shafer.alex@gmail.com"]
 
