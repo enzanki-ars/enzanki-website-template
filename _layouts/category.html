@@ -2,7 +2,13 @@
 layout: default
 ---
 
-<h2>Category - {{page.category}}</h2>
+<h2>Category - {{page.title}}</h2>
+
+{% if page.description %}
+<hr />
+{{ page.description }}
+<hr />
+{% endif %}
 
 <div class="table-responsive">
   <table class="table table-striped">
