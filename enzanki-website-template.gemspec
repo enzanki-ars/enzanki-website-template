@@ -2,7 +2,7 @@
 
 Gem::Specification.new do |spec|
   spec.name          = "enzanki-website-template"
-  spec.version       = "1.3.1"
+  spec.version       = "1.3.2"
   spec.authors       = ["Alex Shafer"]
   spec.email         = ["shafer.alex@gmail.com"]
 
@@ -12,8 +12,8 @@ Gem::Specification.new do |spec|
 
   spec.files         = `git ls-files -z`.split("\x0").select { |f| f.match(%r{^(assets|_layouts|_includes|_sass|LICENSE|README)}i) }
 
-  spec.add_runtime_dependency "github-pages", "~> 172"
+  spec.add_runtime_dependency "github-pages", ">= 180"
 
-  spec.add_development_dependency "bundler", "~> 1.12"
-  spec.add_development_dependency "rake", "~> 10.0"
+  spec.add_development_dependency "bundler", "~> 1.16"
+  spec.add_development_dependency "rake", "~> 12.3"
 end
