@@ -20,7 +20,10 @@
         {% if page.bootswatch_theme or site.bootswatch_theme %}
             <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootswatch/{{ site.data.versions.bootstrap }}/{{ page.bootswatch_theme | default: site.bootswatch_theme }}/bootstrap.min.css" crossorigin="anonymous">
         {% endif %}
-        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/{{ site.data.versions.font-awesome }}/css/font-awesome.min.css" crossorigin="anonymous">
+        
+        <script defer src="https://pro.fontawesome.com/releases/v5.0.9/js/all.js" integrity="sha384-DtPgXIYsUR6lLmJK14ZNUi11aAoezQtw4ut26Zwy9/6QXHH8W3+gjrRDT+lHiiW4" crossorigin="anonymous"></script>
+        <script defer src="https://pro.fontawesome.com/releases/v5.0.9/js/v4-shims.js" integrity="sha384-vuyo8HdrwozCl2DhHOJ40ytjEx9FGy0cqu8i5GHeIoSUm6MPgqCXAVoUIsudKfuE" crossorigin="anonymous"></script>
+        
         <link rel="stylesheet" href="{{ site.github.url | replace_first:'http://','https://' }}/assets/css/main.css">
 
         {% if page.live-reload %}
